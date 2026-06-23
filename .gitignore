@@ -1,0 +1,12 @@
+node_modules/
+.DS_Store
+
+# Local project context and generation pipeline
+/AGENTS.md
+/CLAUDE.md
+/package.json
+/package-lock.json
+/scripts/
+/src/
+/templates/
+/themes/

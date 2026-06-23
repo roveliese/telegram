@@ -1,0 +1,7 @@
+* text=auto eol=lf
+
+*.attheme text eol=lf
+*.tgios-theme text eol=lf
+*.tdesktop-theme binary
+*.palette text eol=lf
+themes/*/* text eol=lf

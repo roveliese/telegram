@@ -1,0 +1,396 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Roveliese for Telegram</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:       #0d0d11;
+      --surface:  #13131a;
+      --card:     #1e1e2e;
+      --text:     #cdd6f4;
+      --sub:      #a6adc8;
+      --rose:     #f5e0dc;
+      --accent:   #a9828a;
+      --link:     #87c3ff;
+      --radius:   10px;
+      --trans:    color .25s, background-color .25s, border-color .25s;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100dvh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 48px 20px 64px;
+      transition: var(--trans);
+    }
+
+    /* ── Header ── */
+    .header { text-align: center; margin-bottom: 40px; }
+    .logo { width: 72px; height: 72px; border-radius: 50%; margin-bottom: 16px; }
+    h1 { font-size: 1.5rem; font-weight: 600; letter-spacing: .02em; }
+    .tagline { color: var(--sub); font-size: .9rem; margin-top: 6px; transition: var(--trans); }
+
+    /* ── Variant selector ── */
+    .variants {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 36px;
+    }
+    .variant-btn {
+      padding: 8px 20px;
+      border-radius: 999px;
+      border: 1.5px solid var(--card);
+      background: var(--card);
+      color: var(--sub);
+      font-size: .85rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: var(--trans), transform .1s;
+    }
+    .variant-btn:hover { border-color: var(--accent); color: var(--text); }
+    .variant-btn.active {
+      border-color: var(--rose);
+      background: transparent;
+      color: var(--rose);
+    }
+    .variant-btn:active { transform: scale(.96); }
+
+    /* ── Download card ── */
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--card);
+      border-radius: var(--radius);
+      padding: 28px 32px;
+      width: 100%;
+      max-width: 420px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+      transition: var(--trans);
+    }
+
+    .detected {
+      font-size: .78rem;
+      color: var(--sub);
+      letter-spacing: .03em;
+      transition: var(--trans);
+    }
+    .detected span { color: var(--rose); font-weight: 600; }
+
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 13px 28px;
+      border-radius: var(--radius);
+      background: var(--accent);
+      color: #fff;
+      font-size: .95rem;
+      font-weight: 600;
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+      transition: opacity .15s, transform .1s;
+      width: 100%;
+      justify-content: center;
+    }
+    .btn-primary:hover { opacity: .85; }
+    .btn-primary:active { transform: scale(.97); }
+    .btn-primary svg { flex-shrink: 0; }
+
+    .mac-alt {
+      font-size: .8rem;
+      color: var(--sub);
+      text-align: center;
+      transition: var(--trans);
+    }
+    .mac-alt a { color: var(--link); text-decoration: none; }
+    .mac-alt a:hover { text-decoration: underline; }
+    .mac-alt.hidden { display: none; }
+
+    /* ── All files ── */
+    details.all-files {
+      width: 100%;
+      max-width: 420px;
+      margin-top: 28px;
+    }
+    details.all-files summary {
+      font-size: .82rem;
+      color: var(--sub);
+      cursor: pointer;
+      user-select: none;
+      list-style: none;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: color .15s;
+    }
+    details.all-files summary:hover { color: var(--text); }
+    details.all-files summary::after { content: "›"; transform: rotate(90deg); display: inline-block; transition: transform .2s; }
+    details.all-files[open] summary::after { transform: rotate(270deg); }
+
+    .all-grid {
+      margin-top: 14px;
+      display: grid;
+      grid-template-columns: auto 1fr 1fr 1fr 1fr;
+      gap: 8px 16px;
+      font-size: .8rem;
+    }
+    .all-grid .col-head {
+      color: var(--sub);
+      font-weight: 600;
+      padding-bottom: 4px;
+      border-bottom: 1px solid var(--card);
+    }
+    .all-grid .row-label {
+      color: var(--sub);
+      padding-right: 8px;
+      display: flex;
+      align-items: center;
+    }
+    .all-grid a {
+      color: var(--link);
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+    }
+    .all-grid a:hover { text-decoration: underline; }
+
+    /* ── Install notes ── */
+    .install-notes {
+      margin-top: 40px;
+      width: 100%;
+      max-width: 420px;
+      font-size: .82rem;
+      color: var(--sub);
+      line-height: 1.7;
+      transition: var(--trans);
+    }
+    .install-notes h3 {
+      font-size: .85rem;
+      font-weight: 600;
+      color: var(--text);
+      margin-top: 18px;
+      margin-bottom: 4px;
+    }
+    .install-notes a { color: var(--link); text-decoration: none; }
+    .install-notes a:hover { text-decoration: underline; }
+
+    /* ── Footer ── */
+    footer {
+      margin-top: auto;
+      padding-top: 56px;
+      text-align: center;
+    }
+    footer img { width: 240px; opacity: .7; }
+    .footer-copy {
+      font-size: .75rem;
+      color: var(--sub);
+      margin-top: 12px;
+      transition: var(--trans);
+    }
+    .footer-copy a { color: var(--sub); text-decoration: none; }
+    .footer-copy a:hover { color: var(--text); }
+  </style>
+</head>
+<body>
+
+<div class="header">
+  <img
+    class="logo"
+    src="https://raw.githubusercontent.com/roveliese/vscode/main/images/icon.png"
+    alt="Roveliese"
+  />
+  <h1>Roveliese for Telegram</h1>
+  <p class="tagline">A quiet, atmospheric theme family built around a rose identity.</p>
+</div>
+
+<div class="variants" role="group" aria-label="Choose variant">
+  <button class="variant-btn active" data-variant="dark">Dark</button>
+  <button class="variant-btn" data-variant="light">Light</button>
+  <button class="variant-btn" data-variant="warm">Warm</button>
+  <button class="variant-btn" data-variant="storm">Storm</button>
+</div>
+
+<div class="card">
+  <p class="detected">Detected: <span id="platform-label">Desktop</span></p>
+
+  <a class="btn-primary" id="btn-main" href="#" download>
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+      <path d="M8 2v8m0 0L5 7m3 3 3-3M2 13h12" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    Download for your device
+  </a>
+
+  <p class="mac-alt hidden" id="mac-alt">
+    Using Telegram Desktop on Mac?
+    <a id="mac-desktop-link" href="#">Get the desktop theme instead</a>
+  </p>
+</div>
+
+<details class="all-files">
+  <summary>All files</summary>
+  <div class="all-grid" id="all-grid">
+    <!-- injected by JS -->
+  </div>
+</details>
+
+<div class="install-notes">
+  <h3>Desktop</h3>
+  Download a <code>.tdesktop-theme</code> file, then open it with Telegram Desktop
+  or select it from <b>Settings → Chat Settings → Choose from file</b>.
+
+  <h3>Android &amp; iOS</h3>
+  Open the downloaded theme file from your device. Telegram shows a theme preview
+  with an <b>Apply</b> action. If the browser downloads the file instead, share it
+  to Telegram from the system share sheet.
+
+  <h3>macOS</h3>
+  Open the <code>.palette</code> file. Telegram for macOS will prompt you to apply it.
+  If you use Telegram Desktop on Mac, download the <code>.tdesktop-theme</code> instead.
+</div>
+
+<footer>
+  <img
+    src="https://raw.githubusercontent.com/roveliese/vscode/main/images/footer.png"
+    alt=""
+  />
+  <p class="footer-copy">
+    Copyright &copy; 2026-present <a href="https://github.com/xloiqa">xloiqa</a>
+    &nbsp;&middot;&nbsp;
+    <a href="https://github.com/roveliese/telegram/blob/main/LICENSE">MIT License</a>
+    &nbsp;&middot;&nbsp;
+    <a href="https://github.com/roveliese/telegram">GitHub</a>
+  </p>
+</footer>
+
+<script>
+(function () {
+  'use strict';
+
+  /* ── Palette (from src/palette.js) ── */
+  var PALETTES = {
+    dark:  { bg: '#0d0d11', surface: '#13131a', card: '#1e1e2e', text: '#cdd6f4', sub: '#a6adc8', rose: '#f5e0dc', accent: '#a9828a', link: '#87c3ff' },
+    light: { bg: '#fef9f9', surface: '#f8f3f3', card: '#ede7e7', text: '#141414', sub: '#6e656b', rose: '#a05566', accent: '#b06a78', link: '#206595' },
+    warm:  { bg: '#100c0d', surface: '#1b1516', card: '#241b1a', text: '#ead9cf', sub: '#ad9291', rose: '#e7b49c', accent: '#b87968', link: '#8abfff' },
+    storm: { bg: '#0b0d12', surface: '#121620', card: '#162040', text: '#c6d2f0', sub: '#9298c2', rose: '#d4a8c0', accent: '#a07888', link: '#7cc8ff' }
+  };
+
+  /* ── File map ── */
+  var BASE = 'https://github.com/roveliese/telegram/raw/main/dist/';
+  var EXTS = { desktop: '.tdesktop-theme', android: '.attheme', ios: '.tgios-theme', macos: '.palette' };
+  var VARIANTS = ['dark', 'light', 'warm', 'storm'];
+  var PLATFORMS = ['desktop', 'android', 'ios', 'macos'];
+
+  function fileUrl(variant, platform) {
+    return BASE + platform + '/roveliese-' + variant + EXTS[platform];
+  }
+
+  /* ── Platform detection ── */
+  function detectPlatform() {
+    var ua = navigator.userAgent;
+    var plat = (navigator.userAgentData && navigator.userAgentData.platform) || navigator.platform || '';
+
+    if (/Android/i.test(ua)) return 'android';
+    if (/iPhone|iPad|iPod/i.test(ua)) return 'ios';
+    // iPadOS 13+ reports as Mac but has touch
+    if (/Mac/i.test(plat) && navigator.maxTouchPoints > 1) return 'ios';
+    if (/Mac/i.test(plat) || /Mac/i.test(ua)) return 'macos';
+    return 'desktop';
+  }
+
+  var PLATFORM_LABELS = { desktop: 'Desktop', android: 'Android', ios: 'iOS', macos: 'macOS' };
+
+  /* ── State ── */
+  var currentVariant  = 'dark';
+  var currentPlatform = detectPlatform();
+
+  /* ── DOM refs ── */
+  var root        = document.documentElement;
+  var btnMain     = document.getElementById('btn-main');
+  var macAlt      = document.getElementById('mac-alt');
+  var macDesktop  = document.getElementById('mac-desktop-link');
+  var platformLbl = document.getElementById('platform-label');
+  var allGrid     = document.getElementById('all-grid');
+  var variantBtns = document.querySelectorAll('.variant-btn');
+
+  /* ── Apply palette to CSS vars ── */
+  function applyPalette(variant) {
+    var p = PALETTES[variant];
+    var s = root.style;
+    s.setProperty('--bg',      p.bg);
+    s.setProperty('--surface', p.surface);
+    s.setProperty('--card',    p.card);
+    s.setProperty('--text',    p.text);
+    s.setProperty('--sub',     p.sub);
+    s.setProperty('--rose',    p.rose);
+    s.setProperty('--accent',  p.accent);
+    s.setProperty('--link',    p.link);
+  }
+
+  /* ── Update main download button ── */
+  function updateMainBtn() {
+    var url = fileUrl(currentVariant, currentPlatform);
+    btnMain.href = url;
+    platformLbl.textContent = PLATFORM_LABELS[currentPlatform];
+
+    if (currentPlatform === 'macos') {
+      macAlt.classList.remove('hidden');
+      macDesktop.href = fileUrl(currentVariant, 'desktop');
+    } else {
+      macAlt.classList.add('hidden');
+    }
+  }
+
+  /* ── Render "All files" grid ── */
+  function renderGrid() {
+    var html = '';
+    // header row
+    html += '<div></div>';
+    PLATFORMS.forEach(function (p) {
+      html += '<div class="col-head">' + PLATFORM_LABELS[p] + '</div>';
+    });
+    // data rows
+    VARIANTS.forEach(function (v) {
+      var label = v.charAt(0).toUpperCase() + v.slice(1);
+      html += '<div class="row-label">' + label + '</div>';
+      PLATFORMS.forEach(function (p) {
+        var url = fileUrl(v, p);
+        html += '<a href="' + url + '" download>↓</a>';
+      });
+    });
+    allGrid.innerHTML = html;
+  }
+
+  /* ── Variant button clicks ── */
+  variantBtns.forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      currentVariant = btn.dataset.variant;
+      variantBtns.forEach(function (b) { b.classList.remove('active'); });
+      btn.classList.add('active');
+      applyPalette(currentVariant);
+      updateMainBtn();
+      // re-render grid links (same structure, just update hrefs)
+      renderGrid();
+    });
+  });
+
+  /* ── Init ── */
+  applyPalette(currentVariant);
+  updateMainBtn();
+  renderGrid();
+}());
+</script>
+</body>
+</html>
