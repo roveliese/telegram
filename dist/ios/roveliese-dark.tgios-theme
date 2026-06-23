@@ -4,9 +4,9 @@ dark: true
 intro:
   statusBar: white
   primaryText: cdd6f4
-  accentText: b77f94
+  accentText: f5e0dc
   disabledText: 7f849c
-  startButton: b77f94
+  startButton: cba7aa
   dot: a6adc8
 passcode:
   bg:
@@ -19,24 +19,24 @@ root:
     background: 181825
     separator: 0d0d11
     icon: 45475a
-    selectedIcon: b77f94
+    selectedIcon: f5e0dc
     text: 45475a
-    selectedText: b77f94
-    badgeBackground: cc7c8a
-    badgeStroke: cc7c8a
+    selectedText: f5e0dc
+    badgeBackground: cba7aa
+    badgeStroke: cba7aa
     badgeText: 0d0d11
   navBar:
-    button: b77f94
+    button: cba7aa
     disabledButton: 7f849c
     primaryText: cdd6f4
     secondaryText: a6adc8
     control: a6adc8
-    accentText: b77f94
+    accentText: f5e0dc
     background: 181825
     opaqueBackground: 181825
     separator: 0d0d11
-    badgeFill: cc7c8a
-    badgeStroke: cc7c8a
+    badgeFill: cba7aa
+    badgeStroke: cba7aa
     badgeText: 0d0d11
     segmentedBg: 13131a
     segmentedFg: 181825
@@ -44,7 +44,7 @@ root:
     segmentedDivider: 80cdd6f4
   searchBar:
     background: 181825
-    accent: b77f94
+    accent: f5e0dc
     inputFill: 13131a
     inputText: cdd6f4
     inputPlaceholderText: a6adc8
@@ -58,8 +58,8 @@ list:
   primaryText: cdd6f4
   secondaryText: 80cdd6f4
   disabledText: 80cdd6f4
-  accent: b77f94
-  highlighted: b77f94
+  accent: cba7aa
+  highlighted: cba7aa
   destructive: cc7c8a
   placeholderText: 80cdd6f4
   itemBlocksBg: 181825
@@ -75,7 +75,7 @@ list:
   switch:
     frame: 80cdd6f4
     handle: 0d0d11
-    content: b77f94
+    content: cba7aa
     positive: a8cc7c
     negative: cc7c8a
   disclosureActions:
@@ -92,7 +92,7 @@ list:
       bg: a8cc7c
       fg: ffffff
     accent:
-      bg: b77f94
+      bg: cba7aa
       fg: ffffff
     warning:
       bg: efb080
@@ -101,7 +101,7 @@ list:
       bg: 13131a
       fg: cdd6f4
   check:
-    bg: b77f94
+    bg: cba7aa
     stroke: 80cdd6f4
     fg: 0d0d11
   controlSecondary: 80cdd6f4
@@ -140,12 +140,12 @@ chatList:
   messageText: 80cdd6f4
   messageHighlightedText: cdd6f4
   messageDraftText: cc7c8a
-  checkmark: b77f94
+  checkmark: cba7aa
   pendingIndicator: 66cdd6f4
   failedFill: cc7c8a
   failedFg: cdd6f4
   muteIcon: 66cdd6f4
-  unreadBadgeActiveBg: b77f94
+  unreadBadgeActiveBg: cba7aa
   unreadBadgeActiveText: 0d0d11
   unreadBadgeInactiveBg: 66cdd6f4
   unreadBadgeInactiveText: 13131a
@@ -174,7 +174,7 @@ chatList:
     bottom: 87c3ff
   storyUnseenPrivate:
     top: f5e0dc
-    bottom: b77f94
+    bottom: cba7aa
   storySeen:
     top: 45475a
     bottom: 45475a
@@ -208,25 +208,25 @@ chat:
       primaryText: cdd6f4
       secondaryText: 80cdd6f4
       linkText: 87c3ff
-      linkHighlight: 80b77f94
+      linkHighlight: 80cba7aa
       scam: cc7c8a
       textHighlight: efb080
-      accentText: b77f94
-      accentControl: b77f94
+      accentText: f5e0dc
+      accentControl: f5e0dc
       mediaActiveControl: a8cc7c
       mediaInactiveControl: 80a8cc7c
       mediaControlInnerBg: 181825
       pendingActivity: 80cdd6f4
-      fileTitle: a8cc7c
+      fileTitle: f5e0dc
       fileDescription: 80cdd6f4
       fileDuration: 80cdd6f4
       mediaPlaceholder: 13131a
       polls:
         radioButton: 313244
-        radioProgress: b77f94
-        highlight: 1Eb77f94
+        radioProgress: f5e0dc
+        highlight: 1Ecba7aa
         separator: 0d0d11
-        bar: a8cc7c
+        bar: f5e0dc
         barIconForeground: cdd6f4
         barPositive: a8cc7c
         barNegative: cc7c8a
@@ -240,11 +240,11 @@ chat:
         withWp: cdd6f4
         withoutWp: cdd6f4
       textSelection: 33a8cc7c
-      textSelectionKnob: a8cc7c
+      textSelectionKnob: f5e0dc
     outgoing:
       bubble:
         withWp:
-          highlightedBg: 313244
+          highlightedBg: 6f5765
           stroke: clear
           reactionInactiveBg: 19cdd6f4
           reactionInactiveFg: cdd6f4
@@ -253,11 +253,11 @@ chat:
           reactionInactiveMediaPlaceholder: 190d0d11
           reactionActiveMediaPlaceholder: 190d0d11
           bgList:
-            0: 1e1e2e
-            1: 1e1e2e
-            2: 313244
+            0: 5c4854
+            1: 68515f
+            2: 6f5765
         withoutWp:
-          highlightedBg: 313244
+          highlightedBg: 6f5765
           stroke: clear
           reactionInactiveBg: 19cdd6f4
           reactionInactiveFg: cdd6f4
@@ -266,31 +266,31 @@ chat:
           reactionInactiveMediaPlaceholder: 190d0d11
           reactionActiveMediaPlaceholder: 190d0d11
           bgList:
-            0: 1e1e2e
-            1: 1e1e2e
-            2: 313244
+            0: 5c4854
+            1: 68515f
+            2: 6f5765
       primaryText: cdd6f4
       secondaryText: 80a6adc8
       linkText: 87c3ff
       linkHighlight: 80cdd6f4
       scam: cc7c8a
       textHighlight: efb080
-      accentText: b77f94
-      accentControl: b77f94
-      mediaActiveControl: b77f94
-      mediaInactiveControl: 80b77f94
-      mediaControlInnerBg: b77f94
+      accentText: f5e0dc
+      accentControl: f5e0dc
+      mediaActiveControl: f5e0dc
+      mediaInactiveControl: 80f5e0dc
+      mediaControlInnerBg: cba7aa
       pendingActivity: 80a6adc8
-      fileTitle: b77f94
+      fileTitle: f5e0dc
       fileDescription: 80a6adc8
       fileDuration: 80a6adc8
       mediaPlaceholder: 313244
       polls:
         radioButton: 0d0d11
-        radioProgress: b77f94
+        radioProgress: f5e0dc
         highlight: 1E0d0d11
         separator: 0d0d11
-        bar: b77f94
+        bar: f5e0dc
         barIconForeground: clear
         barPositive: cdd6f4
         barNegative: cdd6f4
@@ -304,7 +304,7 @@ chat:
         withWp: cdd6f4
         withoutWp: cdd6f4
       textSelection: 33cdd6f4
-      textSelectionKnob: cdd6f4
+      textSelectionKnob: f5e0dc
     freeform:
       withWp:
         bg: 181825
@@ -330,7 +330,7 @@ chat:
         reactionActiveMediaPlaceholder: 190d0d11
     infoPrimaryText: cdd6f4
     infoLinkText: 87c3ff
-    outgoingCheck: 80b77f94
+    outgoingCheck: 80f5e0dc
     mediaDateAndStatusBg: 4C0d0d11
     mediaDateAndStatusText: cdd6f4
     shareButtonBg:
@@ -346,7 +346,7 @@ chat:
       bg: 990d0d11
       fg: cdd6f4
     selectionControl:
-      bg: b77f94
+      bg: cba7aa
       stroke: cdd6f4
       fg: cdd6f4
     deliveryFailed:
@@ -384,18 +384,18 @@ chat:
   inputPanel:
     panelBg: 181825
     panelSeparator: 0d0d11
-    panelControlAccent: b77f94
+    panelControlAccent: f5e0dc
     panelControlDisabled: 8045475a
     panelControlDestructive: cc7c8a
     inputBg: 13131a
     inputStroke: 13131a
-    actionControlBg: b77f94
+    actionControlBg: cba7aa
     actionControlFg: 0d0d11
     primaryText: cdd6f4
     secondaryText: 80cdd6f4
     mediaRecordDot: a8cc7c
     mediaRecordControl:
-      button: b77f94
+      button: cba7aa
       micLevel: 33a8cc7c
       activeIcon: cdd6f4
     panelControl_v2: 80cdd6f4
@@ -439,8 +439,8 @@ chat:
     bg: 181825
     stroke: 0d0d11
     fg: 80cdd6f4
-    badgeBg: b77f94
-    badgeStroke: b77f94
+    badgeBg: cba7aa
+    badgeStroke: cba7aa
     badgeText: cdd6f4
   defaultWallpaper: 09090e
 actionSheet:
@@ -456,7 +456,7 @@ actionSheet:
   disabledActionText: 80cdd6f4
   primaryText: cdd6f4
   secondaryText: 80cdd6f4
-  controlAccent: b77f94
+  controlAccent: f5e0dc
   inputBg: 13131a
   inputHollowBg: 13131a
   inputBorder: 13131a
