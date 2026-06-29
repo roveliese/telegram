@@ -70,17 +70,17 @@ list:
   sectionHeaderText: e6dddd
   freeText: e6dddd
   freeTextError: cf2d56
-  freeTextSuccess: 187554
+  freeTextSuccess: 1f8a65
   freeMonoIcon: e6dddd
   switch:
     frame: 80141414
     handle: fef9f9
     content: a05566
-    positive: 187554
+    positive: 1f8a65
     negative: cf2d56
   disclosureActions:
     neutral1:
-      bg: 187554
+      bg: 1f8a65
       fg: ffffff
     neutral2:
       bg: c85d3a
@@ -89,7 +89,7 @@ list:
       bg: cf2d56
       fg: ffffff
     constructive:
-      bg: 187554
+      bg: 1f8a65
       fg: ffffff
     accent:
       bg: a05566
@@ -116,7 +116,7 @@ list:
   pageIndicatorInactive: 66141414
   inputClearButton: 6e656b
   itemBarChart:
-    color1: 187554
+    color1: 1f8a65
     color2: 80141414
     color3: f8f3f3
   itemInputField:
@@ -134,7 +134,7 @@ chatList:
   pinnedItemHighlightedBg: ede7e7
   itemSelectedBg: ede7e7
   title: 141414
-  secretTitle: 187554
+  secretTitle: 1f8a65
   dateText: 80141414
   authorName: 141414
   messageText: 80141414
@@ -155,9 +155,9 @@ chatList:
   regularSearchBar: ede7e7
   sectionHeaderBg: ede7e7
   sectionHeaderText: 80141414
-  verifiedIconBg: 187554
+  verifiedIconBg: 1f8a65
   verifiedIconFg: 141414
-  secretIcon: 187554
+  secretIcon: 1f8a65
   pinnedArchiveAvatar:
     background:
       top: 206595
@@ -168,9 +168,9 @@ chatList:
       top: e6dddd
       bottom: e6dddd
     foreground: f8f3f3
-  onlineDot: 187554
+  onlineDot: 1f8a65
   storyUnseen:
-    top: 187554
+    top: 1f8a65
     bottom: 206595
   storyUnseenPrivate:
     top: a05566
@@ -190,7 +190,7 @@ chat:
           stroke: ede7e7
           reactionInactiveBg: 11141414
           reactionInactiveFg: 141414
-          reactionActiveBg: 187554
+          reactionActiveBg: 1f8a65
           reactionActiveFg: 141414
           reactionInactiveMediaPlaceholder: 19fef9f9
           reactionActiveMediaPlaceholder: 19fef9f9
@@ -201,7 +201,7 @@ chat:
           stroke: ede7e7
           reactionInactiveBg: 11141414
           reactionInactiveFg: 141414
-          reactionActiveBg: 187554
+          reactionActiveBg: 1f8a65
           reactionActiveFg: 141414
           reactionInactiveMediaPlaceholder: 19fef9f9
           reactionActiveMediaPlaceholder: 19fef9f9
@@ -213,11 +213,11 @@ chat:
       textHighlight: c85d3a
       accentText: a05566
       accentControl: a05566
-      mediaActiveControl: 187554
-      mediaInactiveControl: 80187554
+      mediaActiveControl: 1f8a65
+      mediaInactiveControl: 801f8a65
       mediaControlInnerBg: ede7e7
       pendingActivity: 80141414
-      fileTitle: 187554
+      fileTitle: 1f8a65
       fileDescription: 80141414
       fileDuration: 80141414
       mediaPlaceholder: f8f3f3
@@ -226,9 +226,9 @@ chat:
         radioProgress: a05566
         highlight: 1Ea05566
         separator: fef9f9
-        bar: 187554
+        bar: 1f8a65
         barIconForeground: 141414
-        barPositive: 187554
+        barPositive: 1f8a65
         barNegative: cf2d56
       actionButtonsBg:
         withWp: 80f8f3f3
@@ -239,8 +239,8 @@ chat:
       actionButtonsText:
         withWp: 141414
         withoutWp: 141414
-      textSelection: 33187554
-      textSelectionKnob: 187554
+      textSelection: 331f8a65
+      textSelectionKnob: 1f8a65
     outgoing:
       bubble:
         withWp:
@@ -393,10 +393,10 @@ chat:
     actionControlFg: fef9f9
     primaryText: 141414
     secondaryText: 80141414
-    mediaRecordDot: 187554
+    mediaRecordDot: 1f8a65
     mediaRecordControl:
       button: a05566
-      micLevel: 33187554
+      micLevel: 331f8a65
       activeIcon: 141414
     panelControl_v2: 80141414
     inputPlaceholder_v2: 66141414
@@ -451,7 +451,7 @@ actionSheet:
   opaqueItemHighlightedBg: ede7e7
   itemHighlightedBg: 33ede7e7
   opaqueItemSeparator: f8f3f3
-  standardActionText: 187554
+  standardActionText: 1f8a65
   destructiveActionText: cf2d56
   disabledActionText: 80141414
   primaryText: 141414
@@ -482,7 +482,7 @@ notification:
     navBar:
       background: ede7e7
       primaryText: 141414
-      control: 187554
+      control: 1f8a65
       separator: fef9f9
 chart:
   labels: 99746b71

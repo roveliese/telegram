@@ -198,8 +198,8 @@ chat_mediaSentClock: #13131a
 chat_mediaTimeBackground: #00000066
 chat_mediaTimeText: #13131a
 chat_mediaViews: #13131a
-chat_messageLinkIn: #f5e0dc
-chat_messageLinkOut: #f5e0dc
+chat_messageLinkIn: #87c3ff
+chat_messageLinkOut: #87c3ff
 chat_messagePanelBackground: #13131a
 chat_messagePanelCancelInlineBot: #30304a
 chat_messagePanelCursor: #f5e0dc
@@ -447,7 +447,7 @@ dialogTextGray3: #a6adc8
 dialogTextGray4: #7f849c
 dialogTextGray: #7f849c
 dialogTextHint: #7f849c
-dialogTextLink: #f5e0dc
+dialogTextLink: #87c3ff
 dialogTextRed2: #f14c4c
 dialogTextRed: #f14c4c
 dialogTopBackground: #87c3ff
@@ -590,8 +590,8 @@ windowBackgroundWhiteGreenText: #a8cc7c
 windowBackgroundWhiteHintText: #7f849c
 windowBackgroundWhiteInputField: #181825
 windowBackgroundWhiteInputFieldActivated: #cba7aa
-windowBackgroundWhiteLinkSelection: #f5e0dc33
-windowBackgroundWhiteLinkText: #f5e0dc
+windowBackgroundWhiteLinkSelection: #87c3ff33
+windowBackgroundWhiteLinkText: #87c3ff
 windowBackgroundWhiteRedText2: #f14c4c
 windowBackgroundWhiteRedText3: #f14c4c
 windowBackgroundWhiteRedText4: #f14c4c
