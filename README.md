@@ -1,5 +1,5 @@
 <h3 align="center">
-    <img src="https://raw.githubusercontent.com/roveliese/vscode/main/images/icon.png" width="100" alt="Logo"/><br/>
+    <img src="https://raw.githubusercontent.com/roveliese/.github/main/assets/icon.png" width="100" alt="Logo"/><br/>
     <br/>
     Roveliese for <a href="https://telegram.org">Telegram</a>
     <br/>
@@ -96,7 +96,7 @@ Each variant keeps the same Roveliese character while adjusting its contrast and
 Found an issue or have a suggestion? Open an issue on [GitHub](https://github.com/roveliese/telegram/issues).
 
 <p align="center">
-<img src="https://raw.githubusercontent.com/roveliese/vscode/main/images/footer.png" width="600" alt=""/>
+<img src="https://raw.githubusercontent.com/roveliese/.github/main/assets/footer.png" width="600" alt=""/>
 </p>
 
 <p align="center">
