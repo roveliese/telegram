@@ -18,9 +18,9 @@ root:
   tabBar:
     background: 181825
     separator: 0d0d11
-    icon: 45475a
+    icon: 7f849c
     selectedIcon: f5e0dc
-    text: 45475a
+    text: 7f849c
     selectedText: f5e0dc
     badgeBackground: cba7aa
     badgeStroke: cba7aa
@@ -147,8 +147,8 @@ chatList:
   muteIcon: 66cdd6f4
   unreadBadgeActiveBg: cba7aa
   unreadBadgeActiveText: 0d0d11
-  unreadBadgeInactiveBg: 66cdd6f4
-  unreadBadgeInactiveText: 13131a
+  unreadBadgeInactiveBg: 66585b70
+  unreadBadgeInactiveText: a6adc8
   reactionBadgeActiveBg: cc7c8a
   pinnedBadge: 80cdd6f4
   pinnedSearchBar: 13131a

@@ -341,7 +341,7 @@ chats_actionMessage: #746b71
 chats_actionPressedBackground: #8077c0
 chats_actionUnreadBackground: #a05566
 chats_actionUnreadIcon: #f8f3f3
-chats_actionUnreadPressedBackground: #1f8a65
+chats_actionUnreadPressedBackground: #a05566
 chats_archiveBackground: #ede7e7
 chats_archiveIcon: #141414
 chats_archivePinBackground: #e6dddd
