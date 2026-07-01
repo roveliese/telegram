@@ -3,7 +3,7 @@ shortname: rvl_warm
 dark: true
 actionBarActionModeDefault: #1b1516
 actionBarActionModeDefaultIcon: #423033
-actionBarActionModeDefaultSelector: #261d1d
+actionBarActionModeDefaultSelector: #302423
 actionBarActionModeDefaultTop: #00000010
 actionBarBrowser: #1b1516
 actionBarDefault: #100c0d
@@ -24,7 +24,7 @@ actionBarDefaultSubtitle: #514044
 actionBarDefaultTitle: #ead9cf
 actionBarTabActiveText: #ead9cf
 actionBarTabLine: #ead9cf
-actionBarTabSelector: #261d1d
+actionBarTabSelector: #302423
 actionBarTabUnactiveText: #514044
 actionBarWhiteSelector: #66535a
 avatar_actionBarIconBlue: #987d80
@@ -99,8 +99,8 @@ chat_emojiPanelMasksIcon: #1b1516
 chat_emojiPanelMasksIconSelected: #b87968
 chat_emojiPanelNewTrending: #8abfff
 chat_emojiPanelShadowLine: #00000012
-chat_emojiPanelStickerPackSelector: #342829
-chat_emojiPanelStickerPackSelectorLine: #342829
+chat_emojiPanelStickerPackSelector: #3c2d2c
+chat_emojiPanelStickerPackSelectorLine: #3c2d2c
 chat_emojiPanelStickerSetName: #987d80
 chat_emojiPanelStickerSetNameHighlight: #987d80
 chat_emojiPanelStickerSetNameIcon: #987d80
@@ -344,10 +344,10 @@ chats_actionUnreadIcon: #1b1516
 chats_actionUnreadPressedBackground: #b87968
 chats_archiveBackground: #241b1a
 chats_archiveIcon: #ead9cf
-chats_archivePinBackground: #342829
+chats_archivePinBackground: #3c2d2c
 chats_archiveText: #ead9cf
 chats_attachMessage: #8abfff
-chats_date: #342829
+chats_date: #3c2d2c
 chats_draft: #9b7a86
 chats_mentionIcon: #1b1516
 chats_menuBackground: #1b1516
@@ -468,14 +468,14 @@ featuredStickers_delButton: #d45f73
 featuredStickers_delButtonPressed: #d45f73
 featuredStickers_unread: #8abfff
 files_folderIcon: #987d80
-files_folderIconBackground: #261d1d
+files_folderIconBackground: #302423
 files_iconText: #1b1516
-graySection: #261d1d
+graySection: #302423
 groupcreate_cursor: #e7b49c
 groupcreate_hintText: #423033
 groupcreate_sectionShadow: #00000000
 groupcreate_sectionText: #987d80
-groupcreate_spanBackground: #261d1d
+groupcreate_spanBackground: #302423
 groupcreate_spanDelete: #d45f73
 groupcreate_spanText: #ead9cf
 inappPlayerBackground: #171213
@@ -487,7 +487,7 @@ key_chat_messagePanelVoiceLock: #ad9291
 key_chat_messagePanelVoiceLockBackground: #1b1516
 key_chat_messagePanelVoiceLockShadow: #000000
 key_graySectionText: #987d80
-key_player_progressCachedBackground: #342829
+key_player_progressCachedBackground: #3c2d2c
 key_sheet_other: #ad9291
 key_sheet_scrollUp: #241b1a
 listSelectorSDK21: #0000000F
@@ -497,7 +497,7 @@ location_sendLiveLocationBackground: #d07b88
 location_sendLiveLocationIcon: #1b1516
 location_sendLocationBackground: #8abfff
 location_sendLocationIcon: #1b1516
-login_progressInner: #342829
+login_progressInner: #3c2d2c
 login_progressOuter: #b87968
 musicPicker_buttonBackground: #b87968
 musicPicker_buttonIcon: #1b1516
@@ -522,7 +522,7 @@ player_buttonActive: #b87968
 player_placeholder: #987d80
 player_placeholderBackground: #241b1a
 player_progress: #b87968
-player_progressBackground: #342829
+player_progressBackground: #3c2d2c
 player_time: #987d80
 profile_actionBackground: #ead9cf
 profile_actionIcon: #1b1516

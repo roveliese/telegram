@@ -10,7 +10,7 @@ intro:
   dot: 6e656b
 passcode:
   bg:
-    top: e6dddd
+    top: d8c9c9
     bottom: f8f3f3
   button: ede7e7
 root:
@@ -67,11 +67,11 @@ list:
   blocksSeparator: fef9f9
   plainSeparator: fef9f9
   disclosureArrow: 80141414
-  sectionHeaderText: e6dddd
-  freeText: e6dddd
+  sectionHeaderText: d8c9c9
+  freeText: d8c9c9
   freeTextError: cf2d56
   freeTextSuccess: 1f8a65
-  freeMonoIcon: e6dddd
+  freeMonoIcon: d8c9c9
   switch:
     frame: 80141414
     handle: fef9f9
@@ -130,9 +130,9 @@ chatList:
   itemSeparator: fef9f9
   itemBg: f8f3f3
   pinnedItemBg: ede7e7
-  itemHighlightedBg: ede7e7
-  pinnedItemHighlightedBg: ede7e7
-  itemSelectedBg: ede7e7
+  itemHighlightedBg: d8c9c9
+  pinnedItemHighlightedBg: d8c9c9
+  itemSelectedBg: d8c9c9
   title: 141414
   secretTitle: 1f8a65
   dateText: 80141414
@@ -165,8 +165,8 @@ chatList:
     foreground: 141414
   unpinnedArchiveAvatar:
     background:
-      top: e6dddd
-      bottom: e6dddd
+      top: d8c9c9
+      bottom: d8c9c9
     foreground: f8f3f3
   onlineDot: 1f8a65
   storyUnseen:
@@ -222,7 +222,7 @@ chat:
       fileDuration: 80141414
       mediaPlaceholder: f8f3f3
       polls:
-        radioButton: e6dddd
+        radioButton: d8c9c9
         radioProgress: a05566
         highlight: 1Ea05566
         separator: fef9f9
@@ -253,8 +253,8 @@ chat:
           reactionInactiveMediaPlaceholder: 19fef9f9
           reactionActiveMediaPlaceholder: 19fef9f9
           bgList:
-            0: e6dddd
-            1: e6dddd
+            0: d8c9c9
+            1: d8c9c9
             2: e2d9db
         withoutWp:
           highlightedBg: e2d9db
@@ -266,8 +266,8 @@ chat:
           reactionInactiveMediaPlaceholder: 19fef9f9
           reactionActiveMediaPlaceholder: 19fef9f9
           bgList:
-            0: e6dddd
-            1: e6dddd
+            0: d8c9c9
+            1: d8c9c9
             2: e2d9db
       primaryText: 141414
       secondaryText: 806e656b
@@ -284,7 +284,7 @@ chat:
       fileTitle: a05566
       fileDescription: 806e656b
       fileDuration: 806e656b
-      mediaPlaceholder: e6dddd
+      mediaPlaceholder: d8c9c9
       polls:
         radioButton: fef9f9
         radioProgress: a05566

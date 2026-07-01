@@ -130,9 +130,9 @@ chatList:
   itemSeparator: 0b0d12
   itemBg: 121620
   pinnedItemBg: 131d32
-  itemHighlightedBg: 131d32
-  pinnedItemHighlightedBg: 131d32
-  itemSelectedBg: 131d32
+  itemHighlightedBg: 263560
+  pinnedItemHighlightedBg: 263560
+  itemSelectedBg: 263560
   title: c6d2f0
   secretTitle: a0c878
   dateText: 80c6d2f0

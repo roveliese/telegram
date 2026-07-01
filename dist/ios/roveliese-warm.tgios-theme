@@ -10,7 +10,7 @@ intro:
   dot: ad9291
 passcode:
   bg:
-    top: 342829
+    top: 3c2d2c
     bottom: 1b1516
   button: 241b1a
 root:
@@ -67,11 +67,11 @@ list:
   blocksSeparator: 100c0d
   plainSeparator: 100c0d
   disclosureArrow: 80ead9cf
-  sectionHeaderText: 342829
-  freeText: 342829
+  sectionHeaderText: 3c2d2c
+  freeText: 3c2d2c
   freeTextError: d07b88
   freeTextSuccess: b0cc78
-  freeMonoIcon: 342829
+  freeMonoIcon: 3c2d2c
   switch:
     frame: 80ead9cf
     handle: 100c0d
@@ -130,9 +130,9 @@ chatList:
   itemSeparator: 100c0d
   itemBg: 1b1516
   pinnedItemBg: 241b1a
-  itemHighlightedBg: 241b1a
-  pinnedItemHighlightedBg: 241b1a
-  itemSelectedBg: 241b1a
+  itemHighlightedBg: 3c2d2c
+  pinnedItemHighlightedBg: 3c2d2c
+  itemSelectedBg: 3c2d2c
   title: ead9cf
   secretTitle: b0cc78
   dateText: 80ead9cf
@@ -165,8 +165,8 @@ chatList:
     foreground: ead9cf
   unpinnedArchiveAvatar:
     background:
-      top: 342829
-      bottom: 342829
+      top: 3c2d2c
+      bottom: 3c2d2c
     foreground: 1b1516
   onlineDot: b0cc78
   storyUnseen:
@@ -222,7 +222,7 @@ chat:
       fileDuration: 80ead9cf
       mediaPlaceholder: 1b1516
       polls:
-        radioButton: 342829
+        radioButton: 3c2d2c
         radioProgress: b87968
         highlight: 1Eb87968
         separator: 100c0d
@@ -244,7 +244,7 @@ chat:
     outgoing:
       bubble:
         withWp:
-          highlightedBg: 342829
+          highlightedBg: 3c2d2c
           stroke: clear
           reactionInactiveBg: 19ead9cf
           reactionInactiveFg: ead9cf
@@ -253,11 +253,11 @@ chat:
           reactionInactiveMediaPlaceholder: 19100c0d
           reactionActiveMediaPlaceholder: 19100c0d
           bgList:
-            0: 261d1d
-            1: 261d1d
-            2: 342829
+            0: 302423
+            1: 302423
+            2: 3c2d2c
         withoutWp:
-          highlightedBg: 342829
+          highlightedBg: 3c2d2c
           stroke: clear
           reactionInactiveBg: 19ead9cf
           reactionInactiveFg: ead9cf
@@ -266,9 +266,9 @@ chat:
           reactionInactiveMediaPlaceholder: 19100c0d
           reactionActiveMediaPlaceholder: 19100c0d
           bgList:
-            0: 261d1d
-            1: 261d1d
-            2: 342829
+            0: 302423
+            1: 302423
+            2: 3c2d2c
       primaryText: ead9cf
       secondaryText: 80ad9291
       linkText: 8abfff
@@ -284,7 +284,7 @@ chat:
       fileTitle: b87968
       fileDescription: 80ad9291
       fileDuration: 80ad9291
-      mediaPlaceholder: 342829
+      mediaPlaceholder: 3c2d2c
       polls:
         radioButton: 100c0d
         radioProgress: b87968
@@ -429,9 +429,9 @@ chat:
   inputButtonPanel:
     panelBg: 100c0d
     panelSeparator: 241b1a
-    buttonBg: 261d1d
+    buttonBg: 302423
     buttonStroke: 100c0d
-    buttonHighlightedBg: B2261d1d
+    buttonHighlightedBg: B2302423
     buttonHighlightedStroke: 100c0d
     buttonText: ead9cf
     buttonHighlight: 33ffffff
@@ -492,5 +492,5 @@ chart:
   detailsText: ead9cf
   detailsArrow: ead9cf
   detailsView: 171213
-  rangeViewFrame: 261d1d
+  rangeViewFrame: 302423
   rangeViewMarker: ead9cf

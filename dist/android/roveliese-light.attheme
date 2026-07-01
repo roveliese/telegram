@@ -99,8 +99,8 @@ chat_emojiPanelMasksIcon: #f8f3f3
 chat_emojiPanelMasksIconSelected: #a05566
 chat_emojiPanelNewTrending: #206595
 chat_emojiPanelShadowLine: #00000012
-chat_emojiPanelStickerPackSelector: #e6dddd
-chat_emojiPanelStickerPackSelectorLine: #e6dddd
+chat_emojiPanelStickerPackSelector: #d8c9c9
+chat_emojiPanelStickerPackSelectorLine: #d8c9c9
 chat_emojiPanelStickerSetName: #746b71
 chat_emojiPanelStickerSetNameHighlight: #746b71
 chat_emojiPanelStickerSetNameIcon: #746b71
@@ -344,10 +344,10 @@ chats_actionUnreadIcon: #f8f3f3
 chats_actionUnreadPressedBackground: #a05566
 chats_archiveBackground: #ede7e7
 chats_archiveIcon: #141414
-chats_archivePinBackground: #e6dddd
+chats_archivePinBackground: #d8c9c9
 chats_archiveText: #141414
 chats_attachMessage: #206595
-chats_date: #e6dddd
+chats_date: #d8c9c9
 chats_draft: #9d6d88
 chats_mentionIcon: #f8f3f3
 chats_menuBackground: #f8f3f3
@@ -487,7 +487,7 @@ key_chat_messagePanelVoiceLock: #6e656b
 key_chat_messagePanelVoiceLockBackground: #f8f3f3
 key_chat_messagePanelVoiceLockShadow: #000000
 key_graySectionText: #746b71
-key_player_progressCachedBackground: #e6dddd
+key_player_progressCachedBackground: #d8c9c9
 key_sheet_other: #6e656b
 key_sheet_scrollUp: #ede7e7
 listSelectorSDK21: #0000000F
@@ -497,7 +497,7 @@ location_sendLiveLocationBackground: #cf2d56
 location_sendLiveLocationIcon: #f8f3f3
 location_sendLocationBackground: #206595
 location_sendLocationIcon: #f8f3f3
-login_progressInner: #e6dddd
+login_progressInner: #d8c9c9
 login_progressOuter: #a05566
 musicPicker_buttonBackground: #a05566
 musicPicker_buttonIcon: #f8f3f3
@@ -522,7 +522,7 @@ player_buttonActive: #a05566
 player_placeholder: #746b71
 player_placeholderBackground: #ede7e7
 player_progress: #a05566
-player_progressBackground: #e6dddd
+player_progressBackground: #d8c9c9
 player_time: #746b71
 profile_actionBackground: #141414
 profile_actionIcon: #f8f3f3
