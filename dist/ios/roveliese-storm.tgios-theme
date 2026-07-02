@@ -10,13 +10,13 @@ intro:
   dot: 9298c2
 passcode:
   bg:
-    top: 263560
+    top: 283866
     bottom: 121620
-  button: 142038
+  button: 142139
 root:
   statusBar: white
   tabBar:
-    background: 142038
+    background: 142139
     separator: 0b0d12
     icon: 7a88a8
     selectedIcon: a77898
@@ -32,18 +32,18 @@ root:
     secondaryText: 9298c2
     control: 9298c2
     accentText: a77898
-    background: 142038
-    opaqueBackground: 142038
+    background: 142139
+    opaqueBackground: 142139
     separator: 0b0d12
     badgeFill: c07888
     badgeStroke: c07888
     badgeText: 0b0d12
     segmentedBg: 121620
-    segmentedFg: 142038
+    segmentedFg: 142139
     segmentedText: c6d2f0
     segmentedDivider: 80c6d2f0
   searchBar:
-    background: 142038
+    background: 142139
     accent: a77898
     inputFill: 121620
     inputText: c6d2f0
@@ -62,19 +62,19 @@ list:
   highlighted: a77898
   destructive: c07888
   placeholderText: 80c6d2f0
-  itemBlocksBg: 142038
-  itemHighlightedBg: 142038
+  itemBlocksBg: 142139
+  itemHighlightedBg: 142139
   blocksSeparator: 0b0d12
   plainSeparator: 0b0d12
   disclosureArrow: 80c6d2f0
-  sectionHeaderText: 263560
-  freeText: 263560
+  sectionHeaderText: 283866
+  freeText: 283866
   freeTextError: c07888
   freeTextSuccess: a0c878
-  freeMonoIcon: 263560
+  freeMonoIcon: 283866
   switch:
-    frame: 80c6d2f0
-    handle: 0b0d12
+    frame: 455697
+    handle: c6d2f0
     content: a77898
     positive: a0c878
     negative: c07888
@@ -106,8 +106,8 @@ list:
     fg: 0b0d12
   controlSecondary: 80c6d2f0
   freeInputField:
-    bg: 142038
-    stroke: 142038
+    bg: 142139
+    stroke: 142139
     placeholder: 80c6d2f0
     primary: c6d2f0
     control: 80c6d2f0
@@ -129,10 +129,10 @@ chatList:
   bg: 121620
   itemSeparator: 0b0d12
   itemBg: 121620
-  pinnedItemBg: 142038
-  itemHighlightedBg: 263560
-  pinnedItemHighlightedBg: 263560
-  itemSelectedBg: 263560
+  pinnedItemBg: 142139
+  itemHighlightedBg: 283866
+  pinnedItemHighlightedBg: 283866
+  itemSelectedBg: 283866
   title: c6d2f0
   secretTitle: a0c878
   dateText: 80c6d2f0
@@ -147,13 +147,13 @@ chatList:
   muteIcon: 66c6d2f0
   unreadBadgeActiveBg: a77898
   unreadBadgeActiveText: 0b0d12
-  unreadBadgeInactiveBg: 6640508c
+  unreadBadgeInactiveBg: 66455697
   unreadBadgeInactiveText: 9298c2
   reactionBadgeActiveBg: c07888
   pinnedBadge: 80c6d2f0
   pinnedSearchBar: 121620
-  regularSearchBar: 142038
-  sectionHeaderBg: 142038
+  regularSearchBar: 142139
+  sectionHeaderBg: 142139
   sectionHeaderText: 80c6d2f0
   verifiedIconBg: a0c878
   verifiedIconFg: c6d2f0
@@ -165,8 +165,8 @@ chatList:
     foreground: c6d2f0
   unpinnedArchiveAvatar:
     background:
-      top: 263560
-      bottom: 263560
+      top: 283866
+      bottom: 283866
     foreground: 121620
   onlineDot: a0c878
   storyUnseen:
@@ -184,10 +184,10 @@ chat:
     incoming:
       bubble:
         withWp:
-          bg: 142038
-          gradientBg: 142038
-          highlightedBg: 142038
-          stroke: 142038
+          bg: 142139
+          gradientBg: 142139
+          highlightedBg: 142139
+          stroke: 142139
           reactionInactiveBg: 11c6d2f0
           reactionInactiveFg: c6d2f0
           reactionActiveBg: a0c878
@@ -195,10 +195,10 @@ chat:
           reactionInactiveMediaPlaceholder: 190b0d12
           reactionActiveMediaPlaceholder: 190b0d12
         withoutWp:
-          bg: 142038
-          gradientBg: 142038
-          highlightedBg: 142038
-          stroke: 142038
+          bg: 142139
+          gradientBg: 142139
+          highlightedBg: 142139
+          stroke: 142139
           reactionInactiveBg: 11c6d2f0
           reactionInactiveFg: c6d2f0
           reactionActiveBg: a0c878
@@ -215,14 +215,14 @@ chat:
       accentControl: a77898
       mediaActiveControl: a0c878
       mediaInactiveControl: 80a0c878
-      mediaControlInnerBg: 142038
+      mediaControlInnerBg: 142139
       pendingActivity: 80c6d2f0
       fileTitle: a0c878
       fileDescription: 80c6d2f0
       fileDuration: 80c6d2f0
       mediaPlaceholder: 121620
       polls:
-        radioButton: 263560
+        radioButton: 283866
         radioProgress: a77898
         highlight: 1Ea77898
         separator: 0b0d12
@@ -244,7 +244,7 @@ chat:
     outgoing:
       bubble:
         withWp:
-          highlightedBg: 263560
+          highlightedBg: 283866
           stroke: clear
           reactionInactiveBg: 19c6d2f0
           reactionInactiveFg: c6d2f0
@@ -255,9 +255,9 @@ chat:
           bgList:
             0: 1b2a52
             1: 1b2a52
-            2: 263560
+            2: 283866
         withoutWp:
-          highlightedBg: 263560
+          highlightedBg: 283866
           stroke: clear
           reactionInactiveBg: 19c6d2f0
           reactionInactiveFg: c6d2f0
@@ -268,7 +268,7 @@ chat:
           bgList:
             0: 1b2a52
             1: 1b2a52
-            2: 263560
+            2: 283866
       primaryText: c6d2f0
       secondaryText: 809298c2
       linkText: 7cc8ff
@@ -284,7 +284,7 @@ chat:
       fileTitle: a77898
       fileDescription: 809298c2
       fileDuration: 809298c2
-      mediaPlaceholder: 263560
+      mediaPlaceholder: 283866
       polls:
         radioButton: 0b0d12
         radioProgress: a77898
@@ -307,22 +307,22 @@ chat:
       textSelectionKnob: c6d2f0
     freeform:
       withWp:
-        bg: 142038
-        gradientBg: 142038
-        highlightedBg: 142038
-        stroke: 142038
-        reactionInactiveBg: E5142038
+        bg: 142139
+        gradientBg: 142139
+        highlightedBg: 142139
+        stroke: 142139
+        reactionInactiveBg: E5142139
         reactionInactiveFg: c6d2f0
         reactionActiveBg: 7cc8ff
         reactionActiveFg: c6d2f0
         reactionInactiveMediaPlaceholder: 190b0d12
         reactionActiveMediaPlaceholder: 190b0d12
       withoutWp:
-        bg: 142038
-        gradientBg: 142038
-        highlightedBg: 142038
-        stroke: 142038
-        reactionInactiveBg: E5142038
+        bg: 142139
+        gradientBg: 142139
+        highlightedBg: 142139
+        stroke: 142139
+        reactionInactiveBg: E5142139
         reactionInactiveFg: c6d2f0
         reactionActiveBg: 7cc8ff
         reactionActiveFg: c6d2f0
@@ -340,8 +340,8 @@ chat:
       withWp: 26273a6c
       withoutWp: 26273a6c
     shareButtonFg:
-      withWp: 40508c
-      withoutWp: 40508c
+      withWp: 455697
+      withoutWp: 455697
     mediaOverlayControl:
       bg: 990b0d12
       fg: c6d2f0
@@ -354,8 +354,8 @@ chat:
       fg: c6d2f0
     mediaHighlightOverlay: 99c6d2f0
     stickerPlaceholder:
-      withWp: 80142038
-      withoutWp: 80142038
+      withWp: 80142139
+      withoutWp: 80142139
     stickerPlaceholderShimmer:
       withWp: 0Cc6d2f0
       withoutWp: 0Cc6d2f0
@@ -375,14 +375,14 @@ chat:
         scam: c07888
         dateFillStatic: 99121620
         dateFillFloat: 33121620
-    unreadBarBg: 142038
-    unreadBarStroke: 142038
+    unreadBarBg: 142139
+    unreadBarStroke: 142139
     unreadBarText: c6d2f0
     dateText:
       withWp: c6d2f0
       withoutWp: c6d2f0
   inputPanel:
-    panelBg: 142038
+    panelBg: 142139
     panelSeparator: 0b0d12
     panelControlAccent: a77898
     panelControlDisabled: 80334478
@@ -403,7 +403,7 @@ chat:
     inputText_v2: c6d2f0
     inputControl_v2: 66c6d2f0
   inputMediaPanel:
-    panelSeparator: 142038
+    panelSeparator: 142139
     panelIcon: 80c6d2f0
     panelHighlightedIconBg: 1Fc6d2f0
     panelHighlightedIcon: ACc6d2f0
@@ -428,7 +428,7 @@ chat:
     panelContentOpaqueSearchOverlayHighlight: 4Cc6d2f0
   inputButtonPanel:
     panelBg: 0b0d12
-    panelSeparator: 142038
+    panelSeparator: 142139
     buttonBg: 1b2a52
     buttonStroke: 0b0d12
     buttonHighlightedBg: B21b2a52
@@ -436,7 +436,7 @@ chat:
     buttonText: c6d2f0
     buttonHighlight: 33ffffff
   historyNav:
-    bg: 142038
+    bg: 142139
     stroke: 0b0d12
     fg: 80c6d2f0
     badgeBg: a77898
@@ -446,10 +446,10 @@ chat:
 actionSheet:
   dim: 800b0d12
   bgType: dark
-  opaqueItemBg: 142038
-  itemBg: CC142038
-  opaqueItemHighlightedBg: 142038
-  itemHighlightedBg: 33142038
+  opaqueItemBg: 142139
+  itemBg: CC142139
+  opaqueItemHighlightedBg: 142139
+  itemHighlightedBg: 33142139
   opaqueItemSeparator: 121620
   standardActionText: a0c878
   destructiveActionText: c07888
@@ -466,7 +466,7 @@ actionSheet:
   checkContent: 0b0d12
 contextMenu:
   dim: 990b0d12
-  background: C6142038
+  background: C6142139
   itemSeparator: 26c6d2f0
   sectionSeparator: 330b0d12
   itemBg: 000b0d12
@@ -475,12 +475,12 @@ contextMenu:
   secondary: 80c6d2f0
   destructive: c07888
 notification:
-  bg: 142038
+  bg: 142139
   primaryText: c6d2f0
   expanded:
     bgType: dark
     navBar:
-      background: 142038
+      background: 142139
       primaryText: c6d2f0
       control: a0c878
       separator: 0b0d12
