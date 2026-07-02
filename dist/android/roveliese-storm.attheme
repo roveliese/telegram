@@ -3,7 +3,7 @@ shortname: rvl_storm
 dark: true
 actionBarActionModeDefault: #121620
 actionBarActionModeDefaultIcon: #273a6c
-actionBarActionModeDefaultSelector: #162040
+actionBarActionModeDefaultSelector: #1b2a52
 actionBarActionModeDefaultTop: #00000010
 actionBarBrowser: #121620
 actionBarDefault: #0b0d12
@@ -24,7 +24,7 @@ actionBarDefaultSubtitle: #334478
 actionBarDefaultTitle: #c6d2f0
 actionBarTabActiveText: #c6d2f0
 actionBarTabLine: #c6d2f0
-actionBarTabSelector: #162040
+actionBarTabSelector: #1b2a52
 actionBarTabUnactiveText: #334478
 actionBarWhiteSelector: #40508c
 avatar_actionBarIconBlue: #7a88a8
@@ -106,7 +106,7 @@ chat_emojiPanelStickerSetNameHighlight: #7a88a8
 chat_emojiPanelStickerSetNameIcon: #7a88a8
 chat_emojiPanelTrendingDescription: #7a88a8
 chat_emojiPanelTrendingTitle: #c6d2f0
-chat_emojiSearchBackground: #131d32
+chat_emojiSearchBackground: #142038
 chat_emojiSearchIcon: #7a88a8
 chat_fieldOverlayText: #7a88a8
 chat_gifSaveHintBackground: #000000CC
@@ -128,7 +128,7 @@ chat_inAudioSeekbarSelected: #273a6c
 chat_inAudioSelectedProgress: #d4a8c0
 chat_inAudioTitleText: #7cc8ff
 chat_inBubble: #121620
-chat_inBubbleSelected: #131d32
+chat_inBubbleSelected: #142038
 chat_inBubbleShadow: #00000000
 chat_inContactBackground: #a0c878
 chat_inContactIcon: #121620
@@ -231,7 +231,7 @@ chat_outAudioSelectedProgress: #d4a8c0
 chat_outAudioTitleText: #7cc8ff
 chat_outBroadcast: #a0c878
 chat_outBubble: #0e1119
-chat_outBubbleSelected: #131d32
+chat_outBubbleSelected: #142038
 chat_outBubbleShadow: #00000000
 chat_outContactBackground: #a0c878
 chat_outContactIcon: #121620
@@ -342,7 +342,7 @@ chats_actionPressedBackground: #d888e0
 chats_actionUnreadBackground: #a77898
 chats_actionUnreadIcon: #121620
 chats_actionUnreadPressedBackground: #a77898
-chats_archiveBackground: #131d32
+chats_archiveBackground: #142038
 chats_archiveIcon: #c6d2f0
 chats_archivePinBackground: #263560
 chats_archiveText: #c6d2f0
@@ -468,14 +468,14 @@ featuredStickers_delButton: #f04860
 featuredStickers_delButtonPressed: #f04860
 featuredStickers_unread: #7cc8ff
 files_folderIcon: #7a88a8
-files_folderIconBackground: #162040
+files_folderIconBackground: #1b2a52
 files_iconText: #121620
-graySection: #162040
+graySection: #1b2a52
 groupcreate_cursor: #d4a8c0
 groupcreate_hintText: #273a6c
 groupcreate_sectionShadow: #00000000
 groupcreate_sectionText: #7a88a8
-groupcreate_spanBackground: #162040
+groupcreate_spanBackground: #1b2a52
 groupcreate_spanDelete: #f04860
 groupcreate_spanText: #c6d2f0
 inappPlayerBackground: #0e1119
@@ -489,7 +489,7 @@ key_chat_messagePanelVoiceLockShadow: #000000
 key_graySectionText: #7a88a8
 key_player_progressCachedBackground: #263560
 key_sheet_other: #9298c2
-key_sheet_scrollUp: #131d32
+key_sheet_scrollUp: #142038
 listSelectorSDK21: #0000000F
 location_liveLocationProgress: #a0c878
 location_placeLocationBackground: #7cc8ff
@@ -520,7 +520,7 @@ player_background: #121620
 player_button: #9298c2
 player_buttonActive: #a77898
 player_placeholder: #7a88a8
-player_placeholderBackground: #131d32
+player_placeholderBackground: #142038
 player_progress: #a77898
 player_progressBackground: #263560
 player_time: #7a88a8
@@ -538,10 +538,10 @@ radioBackgroundChecked: #a77898
 returnToCallBackground: #a0c878
 returnToCallText: #121620
 sessions_devicesImage: #7a88a8
-sharedMedia_actionMode: #131d32
-sharedMedia_linkPlaceholder: #131d32
+sharedMedia_actionMode: #142038
+sharedMedia_linkPlaceholder: #142038
 sharedMedia_linkPlaceholderText: #7a88a8
-sharedMedia_photoPlaceholder: #131d32
+sharedMedia_photoPlaceholder: #142038
 sharedMedia_startStopLoadIcon: #a77898
 stickers_menu: #7a88a8
 stickers_menuSelector: #0000000F
@@ -588,7 +588,7 @@ windowBackgroundWhiteGrayText: #7a88a8
 windowBackgroundWhiteGreenText2: #a0c878
 windowBackgroundWhiteGreenText: #a0c878
 windowBackgroundWhiteHintText: #7a88a8
-windowBackgroundWhiteInputField: #131d32
+windowBackgroundWhiteInputField: #142038
 windowBackgroundWhiteInputFieldActivated: #a77898
 windowBackgroundWhiteLinkSelection: #7cc8ff33
 windowBackgroundWhiteLinkText: #7cc8ff
