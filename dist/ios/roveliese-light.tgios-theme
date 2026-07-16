@@ -56,12 +56,12 @@ list:
   blocksBg: efe8e8
   plainBg: efe8e8
   primaryText: 3a3234
-  secondaryText: 803a3234
-  disabledText: 803a3234
+  secondaryText: 746b71
+  disabledText: 746b71
   accent: a05566
   highlighted: a05566
   destructive: c25064
-  placeholderText: 803a3234
+  placeholderText: 746b71
   itemBlocksBg: d8c8ca
   itemHighlightedBg: d8c8ca
   blocksSeparator: f6f2f2
@@ -80,25 +80,25 @@ list:
     negative: c25064
   disclosureActions:
     neutral1:
-      bg: 3d8a70
-      fg: ffffff
+      bg: a2888d
+      fg: f6f2f2
     neutral2:
-      bg: c06f52
-      fg: ffffff
+      bg: 3d6f94
+      fg: f6f2f2
     destructive:
       bg: c25064
-      fg: ffffff
+      fg: f6f2f2
     constructive:
       bg: 3d8a70
-      fg: ffffff
+      fg: f6f2f2
     accent:
       bg: a05566
-      fg: ffffff
+      fg: f6f2f2
     warning:
-      bg: c06f52
-      fg: ffffff
+      bg: a87326
+      fg: f6f2f2
     inactive:
-      bg: efe8e8
+      bg: c9b7ba
       fg: 3a3234
   check:
     bg: a05566
@@ -135,9 +135,9 @@ chatList:
   itemSelectedBg: ac9195
   title: 3a3234
   secretTitle: 3d8a70
-  dateText: 803a3234
+  dateText: 746b71
   authorName: 3a3234
-  messageText: 803a3234
+  messageText: 746b71
   messageHighlightedText: 3a3234
   messageDraftText: c25064
   checkmark: a05566
@@ -154,9 +154,9 @@ chatList:
   pinnedSearchBar: efe8e8
   regularSearchBar: d8c8ca
   sectionHeaderBg: d8c8ca
-  sectionHeaderText: 803a3234
-  verifiedIconBg: 3d8a70
-  verifiedIconFg: 3a3234
+  sectionHeaderText: 746b71
+  verifiedIconBg: a05566
+  verifiedIconFg: f6f2f2
   secretIcon: 3d8a70
   pinnedArchiveAvatar:
     background:
@@ -190,8 +190,8 @@ chat:
           stroke: d8c8ca
           reactionInactiveBg: 113a3234
           reactionInactiveFg: 3a3234
-          reactionActiveBg: 3d8a70
-          reactionActiveFg: 3a3234
+          reactionActiveBg: a05566
+          reactionActiveFg: f6f2f2
           reactionInactiveMediaPlaceholder: 19f6f2f2
           reactionActiveMediaPlaceholder: 19f6f2f2
         withoutWp:
@@ -201,32 +201,32 @@ chat:
           stroke: d8c8ca
           reactionInactiveBg: 113a3234
           reactionInactiveFg: 3a3234
-          reactionActiveBg: 3d8a70
-          reactionActiveFg: 3a3234
+          reactionActiveBg: a05566
+          reactionActiveFg: f6f2f2
           reactionInactiveMediaPlaceholder: 19f6f2f2
           reactionActiveMediaPlaceholder: 19f6f2f2
       primaryText: 3a3234
-      secondaryText: 803a3234
+      secondaryText: 6e656b
       linkText: 3d6f94
       linkHighlight: 80a05566
       scam: c25064
       textHighlight: c06f52
       accentText: a05566
       accentControl: a05566
-      mediaActiveControl: 3d8a70
-      mediaInactiveControl: 803d8a70
+      mediaActiveControl: a05566
+      mediaInactiveControl: 80a05566
       mediaControlInnerBg: d8c8ca
-      pendingActivity: 803a3234
+      pendingActivity: 6e656b
       fileTitle: 3d8a70
-      fileDescription: 803a3234
-      fileDuration: 803a3234
+      fileDescription: 6e656b
+      fileDuration: 6e656b
       mediaPlaceholder: efe8e8
       polls:
         radioButton: ac9195
         radioProgress: a05566
         highlight: 1Ea05566
         separator: f6f2f2
-        bar: 3d8a70
+        bar: a05566
         barIconForeground: 3a3234
         barPositive: 3d8a70
         barNegative: c25064
@@ -239,8 +239,8 @@ chat:
       actionButtonsText:
         withWp: 3a3234
         withoutWp: 3a3234
-      textSelection: 333d8a70
-      textSelectionKnob: 3d8a70
+      textSelection: 33a05566
+      textSelectionKnob: a05566
     outgoing:
       bubble:
         withWp:
@@ -270,7 +270,7 @@ chat:
             1: e9d7db
             2: e2ccd2
       primaryText: 3a3234
-      secondaryText: 806e656b
+      secondaryText: 6e656b
       linkText: 3d6f94
       linkHighlight: 803a3234
       scam: c25064
@@ -280,10 +280,10 @@ chat:
       mediaActiveControl: a05566
       mediaInactiveControl: 80a05566
       mediaControlInnerBg: a05566
-      pendingActivity: 806e656b
+      pendingActivity: 6e656b
       fileTitle: a05566
-      fileDescription: 806e656b
-      fileDuration: 806e656b
+      fileDescription: 6e656b
+      fileDuration: 6e656b
       mediaPlaceholder: ac9195
       polls:
         radioButton: f6f2f2
@@ -292,8 +292,8 @@ chat:
         separator: f6f2f2
         bar: a05566
         barIconForeground: clear
-        barPositive: 3a3234
-        barNegative: 3a3234
+        barPositive: 3d8a70
+        barNegative: c25064
       actionButtonsBg:
         withWp: 80efe8e8
         withoutWp: 80efe8e8
@@ -313,8 +313,8 @@ chat:
         stroke: d8c8ca
         reactionInactiveBg: E5d8c8ca
         reactionInactiveFg: 3a3234
-        reactionActiveBg: 3d6f94
-        reactionActiveFg: 3a3234
+        reactionActiveBg: a05566
+        reactionActiveFg: f6f2f2
         reactionInactiveMediaPlaceholder: 19f6f2f2
         reactionActiveMediaPlaceholder: 19f6f2f2
       withoutWp:
@@ -324,8 +324,8 @@ chat:
         stroke: d8c8ca
         reactionInactiveBg: E5d8c8ca
         reactionInactiveFg: 3a3234
-        reactionActiveBg: 3d6f94
-        reactionActiveFg: 3a3234
+        reactionActiveBg: a05566
+        reactionActiveFg: f6f2f2
         reactionInactiveMediaPlaceholder: 19f6f2f2
         reactionActiveMediaPlaceholder: 19f6f2f2
     infoPrimaryText: 3a3234
@@ -347,8 +347,8 @@ chat:
       fg: 3a3234
     selectionControl:
       bg: a05566
-      stroke: 3a3234
-      fg: 3a3234
+      stroke: f6f2f2
+      fg: f6f2f2
     deliveryFailed:
       bg: c25064
       fg: 3a3234
@@ -441,7 +441,7 @@ chat:
     fg: 803a3234
     badgeBg: a05566
     badgeStroke: a05566
-    badgeText: 3a3234
+    badgeText: f6f2f2
   defaultWallpaper: f6f1f1
 actionSheet:
   dim: 80f6f2f2

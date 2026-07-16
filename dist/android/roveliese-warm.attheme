@@ -376,11 +376,11 @@ chats_pinnedIcon: #987d80
 chats_pinnedOverlay: #171213
 chats_secretIcon: #b0cc78
 chats_secretName: #b0cc78
-chats_sentCheck: #b0cc78
+chats_sentCheck: #b87968
 chats_sentClock: #b0cc78
 chats_sentError: #d45f73
 chats_sentErrorIcon: #1b1516
-chats_sentReadCheck: #b0cc78
+chats_sentReadCheck: #b87968
 chats_tabletSelectedOverlay: #0000000F
 chats_unreadCounter: #b87968
 chats_unreadCounterMuted: #423033
