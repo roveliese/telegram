@@ -231,7 +231,6 @@
 <div class="variants" role="group" aria-label="Choose variant">
   <button class="variant-btn active" data-variant="dark">Dark</button>
   <button class="variant-btn" data-variant="light">Light</button>
-  <button class="variant-btn" data-variant="warm">Warm</button>
   <button class="variant-btn" data-variant="storm">Storm</button>
 </div>
 
@@ -293,16 +292,15 @@
 
   /* ── Palette (from src/palette.js) ── */
   var PALETTES = {
-    dark:  { bg: '#0d0d11', surface: '#13131a', card: '#1e1e2e', text: '#cdd6f4', sub: '#a6adc8', rose: '#f5e0dc', accent: '#a9828a', link: '#87c3ff' },
-    light: { bg: '#fef9f9', surface: '#f8f3f3', card: '#ede7e7', text: '#141414', sub: '#6e656b', rose: '#a05566', accent: '#b06a78', link: '#206595' },
-    warm:  { bg: '#100c0d', surface: '#1b1516', card: '#241b1a', text: '#ead9cf', sub: '#ad9291', rose: '#e7b49c', accent: '#b87968', link: '#8abfff' },
+    dark:  { bg: '#12121c', surface: '#14141c', card: '#222232', text: '#cdd6f4', sub: '#a6adc8', rose: '#f5e0dc', accent: '#a9828a', link: '#79b3ef' },
+    light: { bg: '#e2dad8', surface: '#d8cecf', card: '#cbc0c2', text: '#242024', sub: '#4a4448', rose: '#864b5a', accent: '#9c586a', link: '#184b6b' },
     storm: { bg: '#0b0d12', surface: '#121620', card: '#162040', text: '#c6d2f0', sub: '#9298c2', rose: '#d4a8c0', accent: '#a07888', link: '#7cc8ff' }
   };
 
   /* ── File map ── */
   var BASE = 'https://github.com/roveliese/telegram/raw/main/dist/';
   var EXTS = { desktop: '.tdesktop-theme', android: '.attheme', ios: '.tgios-theme', macos: '.palette' };
-  var VARIANTS = ['dark', 'light', 'warm', 'storm'];
+  var VARIANTS = ['dark', 'light', 'storm'];
   var PLATFORMS = ['desktop', 'android', 'ios', 'macos'];
 
   function fileUrl(variant, platform) {
