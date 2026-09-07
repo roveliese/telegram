@@ -13,7 +13,6 @@
 
 - **Roveliese Dark**
 - **Roveliese Light**
-- **Roveliese Warm**
 - **Roveliese Storm**
 
 Each variant is generated for Telegram Desktop, Android, iOS, and macOS.
@@ -39,13 +38,6 @@ Open the link above on the device where you use Telegram. Choose your variant, t
 <summary>Roveliese Light</summary>
 
 [Desktop](https://github.com/roveliese/telegram/raw/main/dist/desktop/roveliese-light.tdesktop-theme) · [Android](https://github.com/roveliese/telegram/raw/main/dist/android/roveliese-light.attheme) · [iOS](https://github.com/roveliese/telegram/raw/main/dist/ios/roveliese-light.tgios-theme) · [macOS](https://github.com/roveliese/telegram/raw/main/dist/macos/roveliese-light.palette)
-
-</details>
-
-<details>
-<summary>Roveliese Warm</summary>
-
-[Desktop](https://github.com/roveliese/telegram/raw/main/dist/desktop/roveliese-warm.tdesktop-theme) · [Android](https://github.com/roveliese/telegram/raw/main/dist/android/roveliese-warm.attheme) · [iOS](https://github.com/roveliese/telegram/raw/main/dist/ios/roveliese-warm.tgios-theme) · [macOS](https://github.com/roveliese/telegram/raw/main/dist/macos/roveliese-warm.palette)
 
 </details>
 
@@ -89,7 +81,7 @@ Each variant keeps the same Roveliese character while adjusting its contrast and
 - iOS theme variables
 - macOS theme variables
 - Solid in-palette chat wallpapers for desktop and macOS outputs
-- Dark, Light, Warm, and Storm variants
+- Dark, Light, and Storm variants
 
 ## Support
 
