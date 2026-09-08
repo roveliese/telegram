@@ -63,7 +63,7 @@ list:
   destructive: cc7c8a
   placeholderText: 7f849c
   itemBlocksBg: 222232
-  itemHighlightedBg: 222232
+  itemHighlightedBg: 30304a
   blocksSeparator: 0f0f14
   plainSeparator: 0f0f14
   disclosureArrow: 80cdd6f4
@@ -186,7 +186,7 @@ chat:
         withWp:
           bg: 222232
           gradientBg: 222232
-          highlightedBg: 222232
+          highlightedBg: 30304a
           stroke: 222232
           reactionInactiveBg: 11cdd6f4
           reactionInactiveFg: cdd6f4
@@ -197,7 +197,7 @@ chat:
         withoutWp:
           bg: 222232
           gradientBg: 222232
-          highlightedBg: 222232
+          highlightedBg: 30304a
           stroke: 222232
           reactionInactiveBg: 11cdd6f4
           reactionInactiveFg: cdd6f4
@@ -309,7 +309,7 @@ chat:
       withWp:
         bg: 222232
         gradientBg: 222232
-        highlightedBg: 222232
+        highlightedBg: 30304a
         stroke: 222232
         reactionInactiveBg: E5222232
         reactionInactiveFg: cdd6f4
@@ -320,7 +320,7 @@ chat:
       withoutWp:
         bg: 222232
         gradientBg: 222232
-        highlightedBg: 222232
+        highlightedBg: 30304a
         stroke: 222232
         reactionInactiveBg: E5222232
         reactionInactiveFg: cdd6f4

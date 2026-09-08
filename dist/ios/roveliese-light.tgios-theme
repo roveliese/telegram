@@ -63,7 +63,7 @@ list:
   destructive: c25064
   placeholderText: 4e484c
   itemBlocksBg: cbc0c2
-  itemHighlightedBg: cbc0c2
+  itemHighlightedBg: bcb2b4
   blocksSeparator: e9e2e0
   plainSeparator: e9e2e0
   disclosureArrow: 80242024
@@ -73,7 +73,7 @@ list:
   freeTextSuccess: 275335
   freeMonoIcon: b5a4ab
   switch:
-    frame: b9acb1
+    frame: a3979b
     handle: e9e2e0
     content: 9c586a
     positive: 275335
@@ -186,7 +186,7 @@ chat:
         withWp:
           bg: cbc0c2
           gradientBg: cbc0c2
-          highlightedBg: cbc0c2
+          highlightedBg: bcb2b4
           stroke: cbc0c2
           reactionInactiveBg: 11242024
           reactionInactiveFg: 242024
@@ -197,7 +197,7 @@ chat:
         withoutWp:
           bg: cbc0c2
           gradientBg: cbc0c2
-          highlightedBg: cbc0c2
+          highlightedBg: bcb2b4
           stroke: cbc0c2
           reactionInactiveBg: 11242024
           reactionInactiveFg: 242024
@@ -309,7 +309,7 @@ chat:
       withWp:
         bg: cbc0c2
         gradientBg: cbc0c2
-        highlightedBg: cbc0c2
+        highlightedBg: bcb2b4
         stroke: cbc0c2
         reactionInactiveBg: E5cbc0c2
         reactionInactiveFg: 242024
@@ -320,7 +320,7 @@ chat:
       withoutWp:
         bg: cbc0c2
         gradientBg: cbc0c2
-        highlightedBg: cbc0c2
+        highlightedBg: bcb2b4
         stroke: cbc0c2
         reactionInactiveBg: E5cbc0c2
         reactionInactiveFg: 242024
