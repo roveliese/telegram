@@ -1,119 +1,84 @@
-# Telegram platform theming reference
+# Telegram theme format guide
 
-This is the maintenance reference for Roveliese's Telegram generator. It
-summarizes the platform formats and the limits of Telegram's published
-theming guidance. It is not a replacement for the local templates: Telegram
-clients can add, ignore, or reinterpret tokens between releases.
+Roveliese releases native Telegram theme files in
+[`dist/`](../dist/). Each platform has its own format and its own set of
+themeable elements, so a colour decision should always be checked in the
+native client that will use it.
 
-![Roveliese Telegram theme pipeline](platform-theming-flow.svg)
+## Choose the right download
 
-## Source hierarchy
+| Telegram client | File | How to apply it |
+| --- | --- | --- |
+| Telegram Desktop (Windows, Linux, or the Desktop app on macOS) | `.tdesktop-theme` | Download and open the file in Telegram Desktop, then confirm the preview. |
+| Telegram for Android | `.attheme` | Open the downloaded file in Telegram, preview it, and choose **Apply**. |
+| Telegram for iOS | `.tgios-theme` | Share the downloaded file to Telegram from Files, then apply it from the preview. |
+| Telegram for macOS | `.palette` | Open the file in the native Telegram for macOS app and apply it from the preview. |
 
-When a token's purpose or supported syntax is unclear, use sources in this
-order:
+Telegram Desktop and Telegram for macOS are different apps with different
+formats. A Mac running Telegram Desktop needs the `.tdesktop-theme` file; the
+`.palette` file is only for Telegram for macOS.
 
-1. Telegram's official themes documentation and the current native client.
-2. The official client source/default theme for that platform, when available.
-3. This repository's `templates/base/<polarity>/<platform>` and rendered
-   `themes/` output.
-4. Community references only as a lead to validate in the client; never treat
-   an old token glossary as authoritative.
-
-All public variants are built from `src/palette.js`, semantic roles, base
-templates, and `scripts/build.js`. Never hand-edit `dist/` or `themes/`.
-Platform formats are not interchangeable, even when a token sounds similar.
-
-## Platform reference
-
-| Platform | Release format | Authoring model | Important limits |
-| --- | --- | --- | --- |
-| Telegram Desktop | `.tdesktop-theme` | ZIP archive containing `colors.tdesktop-theme`, optionally a wallpaper | Richest documented token format; supports aliases and RGB/RGBA constants. |
-| Android | `.attheme` | Flat `key=value` theme file; may contain a client-specific wallpaper payload | Advanced in-app editor exists, but token coverage changes with Android releases. |
-| iOS | `.tgios-theme` | YAML document; this generator first renders flat keys, then nests them | The native editor is limited compared with Desktop/Android; no exhaustive official token glossary exists. |
-| Telegram for macOS | `.palette` | Flat `key = value` file with metadata and variables | This is the separate native macOS client format, not Telegram Desktop running on a Mac. No exhaustive official token glossary exists. |
+## Format notes
 
 ### Telegram Desktop
 
-- The archive's color file is named `colors.tdesktop-theme`; a wallpaper, if
-  included, is named `background.*` or `tiled.*`.
-- A color can be a literal `#RRGGBB`/`#RRGGBBAA` value or an alias of another
-  constant. Preserve aliases when they express a deliberate relationship;
-  resolve them before measuring contrast.
-- Use the in-app editor to identify a token, then encode the stable result in
-  the base template and rebuild. Check media, replies/forwards, selected
-  states, and the compact forwarding UI separately: their foreground tokens
-  are not necessarily ordinary message text tokens.
-- The community-maintained Desktop theme reference explains archive layout,
-  alpha syntax, and aliases. The upstream `night.tdesktop-theme` is the best
-  current baseline for newly introduced keys.
+Desktop themes are archives. Their colour file is named
+`colors.tdesktop-theme`; an optional wallpaper is stored as `background.*` or
+`tiled.*`. Colours can be literal `#RRGGBB` or `#RRGGBBAA` values, or aliases
+of another colour.
+
+Desktop has the richest public theme tooling. Its in-app editor is useful for
+identifying a visible element, but a change still needs checking in ordinary
+chats, replies and forwarded messages, media, and selected states.
 
 ### Android
 
-- Treat the file as an Android-specific key/value map. Do not transfer
-  Telegram Desktop aliases or iOS YAML paths into it.
-- Use the in-app editor to discover an element and retain every needed literal
-  key in `templates/base/*/android`; Android's editor is the practical source
-  of truth for current builds.
-- Theme wallpaper serialization is client-specific. This project uses its
-  generator/templates rather than manual binary-tail editing.
-- Verify controls with foregrounds on fills (buttons, checkboxes, badges),
-  incoming and outgoing bubbles, and the chat-list selected state.
+Android uses a flat `.attheme` key/value file. The advanced Android editor is
+the most reliable way to discover which elements a current client exposes.
+Theme keys and wallpaper handling can change between app releases, so an
+Android theme should be previewed on the intended Telegram version.
 
 ### iOS
 
-- The source template deliberately stays flat (`chat_message_…`); only
-  `renderIosDocument` creates the nested YAML document. Add a token to the
-  flat template and generator, never directly to the nested output.
-- iOS provides a visual appearance editor and can import a theme, but it does
-  not have the Desktop/Android-level public token reference. A missing token
-  is a real coverage limit, not permission to invent a YAML key.
-- Verify both wallpaper modes, incoming/outgoing/freeform bubbles, media
-  overlays, switches, sheet menus, and selected/pressed states. Components
-  such as peer-colour-driven previews may be rendered by the client without a
-  dedicated theme token.
+iOS imports `.tgios-theme` documents. Telegram's appearance tools support
+importing and applying themes, but Telegram does not publish an exhaustive
+token glossary for this format. Treat an unexposed element as a client limit
+rather than assuming that a similarly named Desktop or Android key will work.
+
+Check both wallpaper modes as well as incoming and outgoing messages, media,
+forwarded/replied content, settings switches, and pressed states.
 
 ### Telegram for macOS
 
-- Keep `.palette` syntax and metadata native to this client: `name`,
-  `shortname`, `isDark`, `tinted`, `parent`, then `key = value` entries.
-- Do not confuse it with Telegram Desktop on macOS. The latter imports the
-  Desktop archive and must use the Desktop template instead.
-- There is no complete public macOS key reference. Use the local base template
-  as the curated supported-key catalogue, confirm unfamiliar keys in the
-  native client, and retain unknown gaps rather than fabricating mappings.
-- Review `basicAccent`, `accent`, selections, reply titles, links, waveform
-  and file activity, semantic status colours, and message/media overlays.
+The native macOS client uses a `.palette` text file, with metadata such as
+`name`, `shortname`, `isDark`, `tinted`, and `parent`, followed by
+`key = value` entries. It is not compatible with the Desktop archive format.
 
-## Shared workflow
+Telegram does not maintain a complete public macOS key reference. Test any
+changed palette in the native app, especially selections, replies, links,
+media overlays, and semantic status colours.
 
-1. Make a semantic decision in `src/palette.js` or `src/roles.js`; map it only
-   to literal tokens that exist in the platform template.
-2. Update `src/tokens.js` when a mapped role is important enough to audit.
-   Name an unsupported platform capability in `KNOWN_GAPS` instead of creating
-   a fictional token.
-3. Build with `node scripts/build.js`; never edit generated release files by
-   hand.
-4. Run build check, integrity, legibility, background contrast, and token-role
-   verification. Measure alpha after compositing onto the actual backdrop.
-5. Import the relevant `dist/` file into the native client and inspect the
-   concrete state that motivated the change. A passing static check cannot
-   prove a client-only component is themeable.
+## Publishing and sharing
 
-Cloud themes and `t.me/addtheme` links are a publishing layer, not a source
-format. Create or update them only through Telegram after the local artifact
-has been tested; never add an unverified link to public documentation.
+Telegram's online theme editor can import an existing theme, choose a
+platform, and publish a Cloud Theme. Only add a `t.me/addtheme/...` link after
+it resolves to a real theme published from Telegram; a download from this
+repository remains the dependable installation path.
 
-## External references
+## Before sharing a theme
 
-- [Telegram: Creating Custom Cloud Themes](https://core.telegram.org/themes)
-  — official import, editor, publishing, and wallpaper workflow for all
-  platforms.
-- [Telegram Desktop Theme Reference](https://github-wiki-see.page/m/telegramdesktop/tdesktop/wiki/Theme-Reference)
-  — detailed Desktop syntax and archive layout; useful but old, so validate
-  new keys against current client behaviour.
-- [Telegram Desktop built-in night theme](https://github.com/telegramdesktop/tdesktop/blob/dev/Telegram/Resources/night.tdesktop-theme)
-  — current upstream reference for Desktop token names and defaults.
-- [Telegram: Creating Android Themes](https://telegra.ph/Create-Theme-Android-FAQ)
-  — official Android editor workflow.
-- [Telegram: Theme Editor 2.0](https://telegram.org/blog/verifiable-apps-and-more?setln=en)
-  — official editor and gradient/background capabilities.
+- Preview the exact downloaded file in its native client.
+- Check chat list, incoming and outgoing messages, replies and forwards,
+  media captions, selected/pressed elements, and settings controls.
+- Check text and link readability on every altered surface in both light and
+  dark environments.
+- Re-test after a Telegram update when a client changes its theming editor or
+  visual components.
+
+## References
+
+- [Telegram: Creating Custom Cloud Themes](https://core.telegram.org/themes) — official import, editor, publishing, and wallpaper workflow.
+- [Telegram Desktop Theme Reference](https://github-wiki-see.page/m/telegramdesktop/tdesktop/wiki/Theme-Reference) — detailed Desktop syntax and archive layout; it is community-maintained, so validate new keys in the current client.
+- [Telegram Desktop built-in night theme](https://github.com/telegramdesktop/tdesktop/blob/dev/Telegram/Resources/night.tdesktop-theme) — current upstream reference for Desktop token names and defaults.
+- [Telegram: Creating Android Themes](https://telegra.ph/Create-Theme-Android-FAQ) — official Android editor workflow.
+- [Telegram: Theme Editor 2.0](https://telegram.org/blog/verifiable-apps-and-more?setln=en) — official editor, gradient, and background capabilities.
