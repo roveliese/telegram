@@ -50,6 +50,9 @@ Open the link above on the device where you use Telegram. Choose your variant, t
 
 Generated release-ready files live in `dist/<platform>/`.
 
+Maintainers can use the [platform theming reference](docs/telegram-platform-theming.md)
+for format-specific constraints, source hierarchy, and validation workflow.
+
 Telegram Cloud links like `t.me/addtheme/...` can be added after the themes are published in Telegram.
 
 ### Desktop
