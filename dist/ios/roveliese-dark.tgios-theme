@@ -255,7 +255,6 @@ chat:
           bgList:
             0: 382d35
             1: 42333d
-            2: 4c3945
         withoutWp:
           highlightedBg: 4c3945
           stroke: clear
@@ -268,7 +267,6 @@ chat:
           bgList:
             0: 382d35
             1: 42333d
-            2: 4c3945
       primaryText: cdd6f4
       secondaryText: a6adc8
       linkText: 79b3ef
