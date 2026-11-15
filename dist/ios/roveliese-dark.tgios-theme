@@ -170,11 +170,11 @@ chatList:
     foreground: 14141c
   onlineDot: 8fb368
   storyUnseen:
-    top: 8fb368
-    bottom: 79b3ef
-  storyUnseenPrivate:
     top: f5e0dc
     bottom: a9828a
+  storyUnseenPrivate:
+    top: 8fb368
+    bottom: 8fb368
   storySeen:
     top: 45475a
     bottom: 45475a
@@ -248,8 +248,8 @@ chat:
           stroke: clear
           reactionInactiveBg: 19cdd6f4
           reactionInactiveFg: cdd6f4
-          reactionActiveBg: cdd6f4
-          reactionActiveFg: clear
+          reactionActiveBg: cba7aa
+          reactionActiveFg: 1a1114
           reactionInactiveMediaPlaceholder: 190f0f14
           reactionActiveMediaPlaceholder: 190f0f14
           bgList:
@@ -260,8 +260,8 @@ chat:
           stroke: clear
           reactionInactiveBg: 19cdd6f4
           reactionInactiveFg: cdd6f4
-          reactionActiveBg: cdd6f4
-          reactionActiveFg: clear
+          reactionActiveBg: cba7aa
+          reactionActiveFg: 1a1114
           reactionInactiveMediaPlaceholder: 190f0f14
           reactionActiveMediaPlaceholder: 190f0f14
           bgList:

@@ -53,8 +53,18 @@ Colors are bare RGB or ARGB hex strings (without `#`), or `clear`. Outgoing
 bubble `bgList` contains gradient colors; `highlightedBg` is a separate state
 and must not become another gradient stop.
 
+The client reads `reactionActiveBg` and `reactionActiveFg` separately in
+incoming, outgoing, and freeform messages, with separate values for `withWp`
+and `withoutWp`. Roveliese pairs a rose fill with a contrasting foreground
+in all six cases. In the chat list, `storyUnseen` is rose,
+`storyUnseenPrivate` is green for Close Friends, and `storySeen` is muted.
+Each ring takes `top` and `bottom` colors.
+
 Check both wallpaper modes as well as incoming and outgoing messages, media,
 forwarded/replied content, settings switches, and pressed states.
+
+The iOS format was rechecked on 2026-11-15 against
+[PresentationThemeCodable.swift at upstream commit `24638bc`](https://github.com/TelegramMessenger/Telegram-iOS/blob/24638bc69bd083981b178dd1e7f921eebbf7fc46/submodules/TelegramPresentationData/Sources/PresentationThemeCodable.swift).
 
 ### Telegram for macOS
 
@@ -96,7 +106,7 @@ literal keys and decoding behavior.
 - iOS: [PresentationThemeCodable.swift, `f1dd7a2`](https://github.com/TelegramMessenger/Telegram-iOS/blob/f1dd7a2dbd02cbbf513e75d5695d8d36d1cf5838/submodules/TelegramPresentationData/Sources/PresentationThemeCodable.swift).
 - macOS: [ColorPalette.swift, `579cebb`](https://github.com/overtake/TelegramSwift/blob/579cebbf0c01fd41b712eff3647fa7f69db9665d/packages/ColorPalette/Sources/ColorPalette/ColorPalette.swift).
 
-This update fixes Android exports to use native `key=value` syntax and ARGB
+The October update fixed Android exports to use native `key=value` syntax and ARGB
 alpha, and explicitly colors reaction controls and story rings. Rose
 marks regular unseen stories and selected reactions; green marks close-friend
 stories and live streams. Selected reaction text has a dedicated foreground.
