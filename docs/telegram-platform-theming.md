@@ -22,15 +22,30 @@ formats. A Mac running Telegram Desktop needs the `.tdesktop-theme` file; the
 
 ### Telegram Desktop
 
-Desktop themes are archives. Their colour file is named
-`colors.tdesktop-theme`; an optional wallpaper is stored as `background.*` or
-`tiled.*`. Roveliese packages `colors.tdesktop-theme` and `background.jpg`
-(the background contains lossless PNG image data). Colours can be literal `#RRGGBB` or `#RRGGBBAA` values, or aliases
-of another colour.
+Desktop supports a plain-text palette or a ZIP archive with a palette and
+wallpaper. Roveliese packages `colors.tdesktop-theme` and `background.png`.
+Colours can be `#RRGGBB`, `#RRGGBBAA`, or aliases of earlier entries.
 
 Desktop has the richest public theme tooling. Its in-app editor is useful for
 identifying a visible element, but a change still needs checking in ordinary
 chats, replies and forwarded messages, media, and selected states.
+
+Telegram Desktop 7.4.4 shares the `msgFileInBg` and `msgFileOutBg` fills and
+the corresponding `historyFile…IconFg` colours between audio download
+controls and chosen reactions inside message bubbles. Roveliese uses a rose
+fill with contrasting counters, icons, and progress indicators.
+
+For profile headers, the client starts with `windowSubTextFg` and can switch
+to `groupCallVideoSubTextFg` based on the cover colour. Roveliese sets that
+fallback to opaque white. Collectible covers can supply their own text
+colour. Unread rings in the stories strip share their gradient with group
+call colours.
+
+The Desktop format and mappings were rechecked on 2026-11-15 against the
+[v7.4.4 importer](https://github.com/telegramdesktop/tdesktop/blob/v7.4.4/Telegram/SourceFiles/window/themes/window_theme.cpp),
+[palette](https://github.com/desktop-app/lib_ui/blob/caaa3f1eb20bab7ef838c6aea35db2397e8f3f07/ui/colors.palette),
+[reaction renderer](https://github.com/telegramdesktop/tdesktop/blob/v7.4.4/Telegram/SourceFiles/history/view/reactions/history_view_reactions.cpp), and
+[profile header](https://github.com/telegramdesktop/tdesktop/blob/v7.4.4/Telegram/SourceFiles/info/profile/info_profile_top_bar.cpp).
 
 ### Android
 
